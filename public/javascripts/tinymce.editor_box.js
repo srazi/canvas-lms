@@ -155,7 +155,7 @@ define([
       theme : "advanced",
       plugins: "autolink,instructure_external_tools,instructure_contextmenu,instructure_links," +
                "instructure_embed,instructure_image,instructure_equation,instructure_record,instructure_equella," +
-               "media,paste,table,inlinepopups",
+               "media,paste,table,inlinepopups,directionality",
       dialog_type: 'modal',
       language_load: false,
       relative_urls: false,
