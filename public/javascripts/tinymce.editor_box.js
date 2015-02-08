@@ -130,9 +130,13 @@ define([
     var equella_button = INST && INST.equellaEnabled ? ",instructure_equella" : "";
     instructure_buttons = instructure_buttons + equella_button;
 
+    // TODO: add an option to profile setting page
+    var support_RTL_editing = true;
+
     var buttons1 = "bold,italic,underline,forecolor,backcolor,removeformat,justifyleft,justifycenter,justifyright,bullist,outdent,indent,sup,sub,numlist,table,instructure_links,unlink" + instructure_buttons + ",fontsizeselect,formatselect";
     var buttons2 = "";
-    var buttons3 = "";
+    // we add them here because they are a most have for RTL users
+    var buttons3 = support_RTL_editing ? "ltr,rtl" : "";
 
     if (width < 359 && width > 0) {
       buttons1 = "bold,italic,underline,forecolor,backcolor,removeformat,justifyleft,justifycenter,justifyright";
